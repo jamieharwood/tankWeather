@@ -4,7 +4,9 @@ import requests
 import psycopg2
 
 def main():
-    
+    #  https://api.darksky.net/forecast/724da518cf39cf26f783a1751468a287/51.34304,1.01370
+    #  Darksky is a possible alternative to the wunderground.
+	
     resp = requests.get('http://api.wunderground.com/api/29c8c14c8a1fabe6/conditions/q/CA/whitstable.json')
 
     if resp.status_code != 200:
